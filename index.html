@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Baccarat (Electron)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #0a5c36;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      display: inline-block;
+      width: 100px;
+      height: 140px;
+      margin: 10px;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: transform 0.3s ease;
+      border: 1px solid #ccc;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card-back {
+      background-image: url('./assets/cards/back.png');
+      background-size: cover;
+    }
+    #deal-button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 20px;
+      background: #d4af37;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    #deal-button:hover {
+      background: #c19b2e;
+    }
+    .hand-container {
+      margin: 30px auto;
+      padding: 20px;
+      background: rgba(0,0,0,0.2);
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 10px;
+      color: #d4af37;
+    }
+    #game-status {
+      font-size: 24px;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      background: rgba(0,0,0,0.2);
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Baccarat</h1>
+  <button id="deal-button">Deal Cards</button>
+  
+  <div class="hand-container">
+    <h2>Player Hand</h2>
+    <div id="player-hand" class="hand"></div>
+  </div>
+  
+  <div class="hand-container">
+    <h2>Banker Hand</h2>
+    <div id="banker-hand" class="hand"></div>
+  </div>
+  
+  <div id="game-status" style="font-size: 24px; margin-top: 20px;"></div>
+
+  <script src="./renderer.js"></script>
+</body>
+</html>

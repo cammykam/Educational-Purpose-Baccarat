@@ -1,0 +1,1 @@
+/Users/mac/Desktop/6.password\ manager\ electron\ app\ dev/untitled\ folder/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron /Users/mac/Desktop/6.password\ manager\ electron\ app\ dev/untitled\ folder
