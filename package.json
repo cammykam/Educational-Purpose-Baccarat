@@ -8,9 +8,10 @@
     "dev": "electron ."
   },
   "devDependencies": {
-    "electron": "22.3.27"
+    "electron": "22.3.27",
+    "electron-packager": "^17.1.2"
   },
   "engines": {
     "node": ">=18.0.0"
   }
-} 
+}
